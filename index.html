@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Promise</title>
+</head>
+<body>
+<!-- Задача на промисы:
+   есть 3 асинхронных метода, которые возвращают в колбэк данные через 1-5 секунд (рандомно), первый метод возвращает имя, второй - число, третий - цвет.
+
+   задание
+   1) по нажатии кнопки вывести в консоль имя, цвет и число
+   2) вывести все одновременно (в момент, когда все данные готовы)
+   3) вывести в определенном порядке: имя, цвет, число, PROMISE-->
+
+<div class="container">
+    <div class="loader hide"></div>
+    <h2>Use callback functions</h2>
+    <div>
+        <button class="first">First Task</button>
+        <button class="first">Second Task</button>
+        <button class="first">Third Task</button>
+    </div>
+    <h2>Use Custome Promise</h2>
+    <div>
+        <button class="second">First Task</button>
+        <button class="second">Second Task</button>
+        <button class="second">Third Task</button>
+    </div>
+    <h2>Use ES6 Promise</h2>
+    <div>
+        <button class="third">First Task</button>
+        <button class="third">Second Task</button>
+        <button class="third">Third Task</button>
+    </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" ></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="loader.js"></script>
+<script src="toastr_options.js"></script>
+<script src="callback_solution.js"></script>
+<script src="custom_class_promise.js"></script>
+<script src="es6_promises.js"></script>
+</body>
+</html>
